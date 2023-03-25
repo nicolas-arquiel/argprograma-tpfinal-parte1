@@ -1,0 +1,87 @@
+:root{
+    --background:#E2DBD4;
+    --background-alternative:#CFC3C6;
+    --button:#6A5975;
+    --text:#39313C;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--text);
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* Primera parte */
+
+.home{
+    width: 90%;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.navbar-custom{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-custom ul{
+    gap: 20px;
+    display: flex;
+}
+
+/* Segunda parte */
+.about-section{
+    width: 90%;
+    height: 100vh;
+}
+
+/* Tercera parte */
+.products-section{
+    width: 90%;
+    height: 100vh;
+    background-color: var(--background);
+
+}
+
+/* Cuarta parte */
+.map-section{
+    width: 90%;
+    height: 100vh;
+}
+
+.contact-section{
+    width: 90%;
+    height: 100vh;
+    background-color: var(--background);
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-custom{
+        flex-direction: column;
+    }
+  
+    .navbar-custom ul{
+        flex-direction: column;
+        padding: 0;
+
+    }
+  }
