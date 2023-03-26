@@ -29,14 +29,19 @@ a{
 
 /* Primera parte */
 
-.home{
+.section-home{
     width: 90%;
     height: 100vh;
     background-color: var(--background);
+    box-shadow: 20px 0px 10px -5px rgba(0,0,0,0.09), 
+    -20px 0px 10px -5px rgba(0,0,0,0.09);
+    
 }
 
 .navbar-custom{
-    padding: 10px;
+    background-color: var(--background);
+    width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -48,22 +53,114 @@ a{
 
 /* Segunda parte */
 .about-section{
+    padding: 30px;
     width: 90%;
     height: 100vh;
+    box-shadow: 20px 0px 10px -5px rgba(0,0,0,0.09), 
+                -20px 0px 10px -5px rgba(0,0,0,0.09);
 }
+
+.about-section > div{
+    height: 50%;
+}
+
+.info-content{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.info-content div {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
 
 /* Tercera parte */
 .products-section{
+    display: flex;
+    flex-direction: row;
     width: 90%;
     height: 100vh;
     background-color: var(--background);
+    padding: 30px;
+    box-shadow: 20px 0px 10px -5px rgba(0,0,0,0.09), 
+    -20px 0px 10px -5px rgba(0,0,0,0.09);
+}
 
+.info-product-container{
+    width: 50%;
+}
+
+.product-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.product-container-large{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 320px;
+    border-radius: 20px;
+    background-color: var(--background-alternative);
+}
+
+.product-card-large{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: var(--background-alternative);
+    width: 680px;
+    height: 200px;
+}
+
+.product-price-container{
+    margin-top: 10px;
+    padding: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.product-price-container-large{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    width: 50%;
+}
+
+.old-price{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.new-price{
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* Cuarta parte */
 .map-section{
     width: 90%;
     height: 100vh;
+    box-shadow: 20px 0px 10px -5px rgba(0,0,0,0.09), 
+    -20px 0px 10px -5px rgba(0,0,0,0.09);
 }
 
 .contact-section{
