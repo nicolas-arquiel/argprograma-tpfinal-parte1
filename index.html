@@ -9,17 +9,17 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <title>Planta</title>
 </head>
 
 <body>
 
-    <!-- Primera parte -->
-    <section class="container section-home" id="about-home">
-        <!-- barra de navegacion + nombre -->
-        <nav class="navbar-custom">
+    <!-- Barra de navegacion + nombre -->
+    <header>
+        <nav class="container navbar-custom">
             <div>
-                <p>Armonia flores</p>
+                <h3 class="subrayado">ARMONIA FLORES</h3>
             </div>
             <div>
                 <ul>
@@ -33,14 +33,45 @@
                         <a href="#products-section">Nuestros productos</a>
                     </li>
                     <li>
-                        <a href="#map-section">Donde estamos</a>
+                        <a href="#section-map">Donde estamos</a>
                     </li>
                     <li>
-                        <a href="#contact-section">Contacto</a>
+                        <a href="#section-contact">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
+    </header>
+
+    <!-- Primera parte -->
+    <section class="container section-home" id="section-home">
+        <div class="home-container">
+            <div class="home-content">
+                <h2 class="subrayado">Comparte amor y alegría con nuestras hermosas flores.</h2>
+                <p>Nuestra pasión por las flores nos impulsa a ofrecer arreglos únicos y modernos, precios atractivos y
+                    entregas flexibles para satisfacer las necesidades de nuestros clientes.</p>
+                <a class="button">COMPRAR AHORA</a>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-flower">
+                    <img src="flower-home.jpg" alt="flower">
+                    <img src="flower-home2.jpg" alt="flower">
+                    <img src="flower-home3.jpg" alt="flower">
+                </div>
+                <div class="gallery-opinion">
+                    <div class="gallery-avatar">
+                        <img src="https://api.lorem.space/image/face?w=100&h=100" alt="avatar">
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="gallery-content">
+                        <small>"¡Me encantó el servicio de esta floristería!, arreglos florales modernos y únicos,
+                            precios
+                            atractivos, entrega puntual, personal fue muy amable y servicial."</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Segunda parte -->
@@ -89,46 +120,45 @@
     <!-- Tercera parte -->
     <section class="container products-section" id="products-section">
         <div class="info-product-container">
-            <h2>Nuestos productos</h2>
-            <p>Rosas</p>
-            <p>123123</p>
-            <p>123123</p>
-            <p>123123</p>
-            <p>123123</p>
+            <h2 class="subrayado">PRODUCTOS DESTACADOS</h2>
+            <p>Le ofrecemos una selección de los artículos más destacados de nuestro catálogo. Si desea explorar nuestro
+                catálogo completo, le invitamos a hacer clic en el botón a continuación para ser redirigido a la página
+                correspondiente.</p>
+            <a href="">pulsa aqui</a>
         </div>
         <div class="product-container">
             <div class="product-card">
-                <img src="https://picsum.photos/180/200" alt="card">
+                <img src="./flower-featured.jpg"  width="180" height="200" alt="card">
                 <div class="product-price-container">
                     <p class="old-price">$99999</p>
                     <p class="new-price">$99999</p>
                 </div>
-                <button>COMPRAR</button>
+                <button class="button">COMPRAR</button>
             </div>
             <div class="product-card">
-                <img src="https://picsum.photos/180/200" alt="card">
+                <img src="./flower-featured2.jpg" width="180" height="200" alt="card">
                 <div class="product-price-container">
                     <p class="old-price">$99999</p>
                     <p class="new-price">$99999</p>
                 </div>
-                <button>COMPRAR</button>
+                <button class="button">COMPRAR</button>
             </div>
             <div class="product-card">
-                <img src="https://picsum.photos/180/200" alt="card">
+                <img src="./flower-featured3.jpg" width="180" height="200" alt="card">
                 <div class="product-price-container">
                     <p class="old-price">$99999</p>
                     <p class="new-price">$99999</p>
                 </div>
-                <button>COMPRAR</button>
+                <button class="button">COMPRAR</button>
             </div>
             <div class="product-container-large">
                 <div class="product-card-large">
                     <div class="product-price-container-large">
                         <small>Compra un ramo variado</small>
                         <p class="new-price">$99999</p>
-                        <button>COMPRAR</button>
+                        <button class="button">COMPRAR</button>
                     </div>
-                    <img src="https://picsum.photos/150/150" alt="card">
+                    <img src="./arrangements-featured.jpg" width="170" height="170" alt="card">
                 </div>
             </div>
 
@@ -136,7 +166,7 @@
     </section>
 
     <!-- Cuatrta parte -->
-    <section class="container map-section" id="map-section">
+    <section class="container map-section" id="section-map">
         <div class="map-container">
 
             <div class="map-description">
@@ -164,17 +194,41 @@
 
     </section>
 
-    <!-- Quinta parte -->
-    <section class="container contact-section" id="contact-section">
-        <div class="contact-container" >
-            <div class="contact-form-container" >
-                <form>
+    
 
+    <!-- Quinta parte -->
+    <section class="container contact-section" id="section-contact">
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <h2>SUSCRIBETE PARA RECIBIR NOTICIAS</h2>
+                <p>Permanece actualizado con nuestras últimas noticias y novedades suscribiéndote a nuestro boletín.
+                    Ingresa tu dirección de correo electrónico o número de teléfono para recibir notificaciones de
+                    nuestros eventos, promociones y contenido exclusivo.</p>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Telefono">
+                    <button class="button">Enviar</button>
                 </form>
             </div>
-            <div class="contact-info-container" >
-                <div class="contact-info-content" >
-
+            <div class="contact-info-container">
+                <div class="contact-info-content">
+                    <div class="contact-info">
+                        <div class="icon-container">
+                            <iconify-icon icon="cib:gmail" width="20px"></iconify-icon>
+                            <p>armonia.flores@gmail.com</p>
+                        </div>
+                        <div class="icon-container">
+                            <iconify-icon icon="material-symbols:phone-in-talk-outline" width="20px"></iconify-icon>
+                            <p>342 111-1111 / 343 222-2222</p>
+                        </div>
+                        <div class="info-slogan subrayado">
+                            <h4>Cultivando belleza,</h4>
+                            <h4>cultivando emociones.</h4>
+                        </div>
+                    </div>
+                    <div class="contact-img">
+                        <img src="./flower-contact.jpg" width="100%" height="100%" alt="flower">
+                    </div>
                 </div>
             </div>
         </div>
