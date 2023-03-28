@@ -57,6 +57,10 @@ a {
     background: linear-gradient(to bottom, #8a3d8c 0%, #a759a0 100%);
 }
 
+.hidden{
+    display: none;
+}
+
 /* Barra de navegacion + nombre */
 
 .navbar-custom {
@@ -299,6 +303,12 @@ a {
     width: 50%;
 }
 
+.product-price-container-large div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .old-price {
     text-decoration: line-through;
     font-size: 14px;
@@ -307,6 +317,9 @@ a {
 .new-price {
     font-weight: bold;
     font-size: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
 }
 
 /* Cuarta parte */
@@ -415,7 +428,50 @@ input:focus {
     margin-top: 30px;
 }
 
+/* SHOP */
+.shop-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
+.shop-filter-product-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    width: 30%;
+}
+
+.shop-product-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.shop-card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: var(--background-alternative);
+}
+
+.shop-card img{
+    border-radius: 20px;
+    border: solid .5px var(--button);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+/* RESPONSIVE */
 @media only screen and (max-width: 768px) {
     .navbar-custom {
         flex-direction: column;
