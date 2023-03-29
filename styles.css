@@ -620,6 +620,49 @@ img {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
+    *{
+        font-size: 14px;
+    }
+    .section-home, .map-section, .about-section,.contact-section,.products-section{
+        height: auto;
+
+    }
+
+    .home-container{
+        flex-direction: column;
+    }
+
+    .home-content{
+        text-align: center;
+        align-items: center;
+    }
+
+    .home-container div{
+        width: 100%;
+    }
+
+    .gallery-flower{
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: start;
+    }
+
+    .gallery-flower img{
+        width: 80%;
+        height: auto;
+        margin: 0px 10px;
+    }
+
+    .gallery-opinion{
+        flex-direction: column;
+    }
+
+    .gallery-avatar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar-custom {
         flex-direction: column;
     }
