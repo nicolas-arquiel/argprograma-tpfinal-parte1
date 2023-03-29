@@ -4,6 +4,7 @@ const cartEmptyIcon = document.querySelector('.cart-empty')
 const cartIcon = document.querySelector('.cart-non-empty')
 const purchaseButton = document.querySelectorAll('button')
 const cartButton = document.querySelector('.cart-container')
+const scrollButton = document.querySelector('.scroll-to-top-button')
 
 const errorMesagge = 'Lo siento, estamos realizando tareas de mantenimiento en la tienda en este momento. Sin embargo, siéntete libre de explorar nuestro catálogo mientras tanto. Gracias por tu comprensión.'
 
@@ -34,6 +35,21 @@ purchaseButton.forEach(button => {
 });
 
 // GESTION DE EVENTO CLICK CART
-cartButton.addEventListener('click',()=>alert(errorMesagge))
+cartButton?.addEventListener('click', () => alert(errorMesagge))
 
 
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+});
+
+scrollButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
